@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+DESCRIPTION:
+This keyboard mode is exclusively for
+lowercase alphabetical characters.
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+        android:keyWidth="30%p"
+        android:horizontalGap="0px"
+        android:verticalGap="0px"
+        android:keyHeight="80dp" >
+
+        <!-- Row 1 -->
+        <Row android:rowEdgeFlags="top">
+            <!-- Contains: ? -->
+            <Key
+                android:codes="063"
+                android:keyLabel="\?"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: a, b, c -->
+            <Key
+                android:codes="097"
+                android:keyLabel="abc"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="abc" />
+            <!-- Contains: d, e, f -->
+            <Key
+                android:codes="100"
+                android:keyLabel="def"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="def" />
+            <!-- Contains: Comma symbol -->
+            <Key
+                android:codes="44"
+                android:keyLabel=","
+                android:keyWidth="20%p"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 2 -->
+        <Row>
+            <!-- Contains: g, h, i -->
+            <Key
+                android:codes="103"
+                android:keyLabel="ghi"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="ghi"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: j, k, l  -->
+            <Key
+                android:codes="106"
+                android:keyLabel="jkl"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="jkl" />
+            <!-- Contains: m, n, o -->
+            <Key
+                android:codes="109"
+                android:keyLabel="mno"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="mno" />
+            <!-- Contains: Period symbol -->
+            <Key
+                android:codes="46"
+                android:keyLabel="."
+                android:keyWidth="20%p"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 3 -->
+        <Row>
+            <!-- Contains: p, q, r, s -->
+            <Key
+                android:codes="112"
+                android:keyLabel="pqrs"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="pqrs"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: t, u, v  -->
+            <Key
+                android:codes="116"
+                android:keyLabel="tuv"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="tuv" />
+            <!-- Contains: w, x, y, z -->
+            <Key
+                android:codes="119"
+                android:keyLabel="wxyz"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="wxyz" />
+            <!-- Contains: DELETE action -->
+            <Key
+                android:codes="-5"
+                android:keyLabel="⌫"
+                android:keyWidth="20%p"
+                android:isRepeatable="true"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 4 -->
+        <Row android:rowEdgeFlags="bottom">
+            <!-- Contains: MODE action -->
+            <Key
+                android:codes="1000"
+                android:keyLabel="⇧"
+                android:keyWidth="28%p"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: Space bar (takes up two keys)  -->
+            <Key
+                android:codes="32"
+                android:keyWidth="54%p"
+                android:keyLabel="" />
+            <!-- Contains: ENTER action -->
+            <Key
+                android:codes="-5"
+                android:keyLabel="↩"
+                android:keyWidth="18%p"
+                android:isRepeatable="true"
+                android:keyEdgeFlags="right" />
+        </Row>
+</Keyboard>

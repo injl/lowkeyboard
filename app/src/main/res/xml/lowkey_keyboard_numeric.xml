@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+DESCRIPTION:
+This keyboard mode is exclusively
+for numeric characters.
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+        android:keyWidth="30%p"
+        android:horizontalGap="0px"
+        android:verticalGap="0px"
+        android:keyHeight="80dp" >
+
+        <!-- Row 1 -->
+        <Row android:rowEdgeFlags="top">
+            <!-- Contains: 1 -->
+            <Key
+                android:codes="049"
+                android:keyLabel="1"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: 2 -->
+            <Key
+                android:codes="050"
+                android:keyLabel="2" />
+            <!-- Contains: 3 -->
+            <Key
+                android:codes="051"
+                android:keyLabel="3" />
+            <!-- Contains: Comma symbol -->
+            <Key
+                android:codes="44"
+                android:keyLabel=","
+                android:keyWidth="20%p"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 2 -->
+        <Row>
+            <!-- Contains: 4 -->
+            <Key
+                android:codes="052"
+                android:keyLabel="4"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: 5  -->
+            <Key
+                android:codes="053"
+                android:keyLabel="5" />
+            <!-- Contains: 6 -->
+            <Key
+                android:codes="054"
+                android:keyLabel="6" />
+            <!-- Contains: Period symbol -->
+            <Key
+                android:codes="46"
+                android:keyLabel="."
+                android:keyWidth="20%p"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 3 -->
+        <Row>
+            <!-- Contains: 7 -->
+            <Key
+                android:codes="055"
+                android:keyLabel="7"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: 8  -->
+            <Key
+                android:codes="056"
+                android:keyLabel="8" />
+            <!-- Contains: 9 -->
+            <Key
+                android:codes="057"
+                android:keyLabel="9" />
+            <!-- Contains: DELETE action -->
+            <Key
+                android:codes="-5"
+                android:keyLabel="⌫"
+                android:keyWidth="20%p"
+                android:isRepeatable="true"
+                android:keyEdgeFlags="right" />
+        </Row>
+
+        <!-- Row 4 -->
+        <Row android:rowEdgeFlags="bottom">
+            <!-- Contains: MODE action -->
+            <Key
+                android:codes="1000"
+                android:keyLabel="ⓐ"
+                android:keyWidth="28%p"
+                android:keyEdgeFlags="left" />
+            <!-- Contains: Space bar (takes up two keys)  -->
+            <Key
+                android:codes="048"
+                android:keyWidth="54%p"
+                android:keyLabel="0  ␣"
+                android:popupKeyboard="@xml/popup_menu"
+                android:popupCharacters="0 "/>
+            <!-- Contains: ENTER action -->
+            <Key
+                android:codes="-5"
+                android:keyLabel="↩"
+                android:keyWidth="18%p"
+                android:isRepeatable="true"
+                android:keyEdgeFlags="right" />
+        </Row>
+</Keyboard>
